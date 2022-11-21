@@ -10,6 +10,7 @@ print ('Введите координаты точки B')
 xB = int(input('B(x): '))
 yB = int(input('B(y): '))
 
-dist = ((xB - xA)**2 + (yB - yA)**2)**0.5
+dist = round (((xB - xA)**2 + (yB - yA)**2)**0.5, 2)
+dist = float(int(dist * 100)/100)
 str_dist = str(dist).replace(".", ",")
-print (f'A {xA, yA}, B {xB, yB} -> {str_dist[:4]}')
+print (f'A {xA, yA}, B {xB, yB} -> {str_dist}')
