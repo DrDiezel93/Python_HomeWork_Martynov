@@ -3,8 +3,6 @@
 # - A (3,6); B (2,1) -> 5,09
 # - A (7,-5); B (1,-1) -> 7,21
 
-import locale
-
 print ('Введите координаты точки А')
 xA = int(input('A(x): '))
 yA = int(input('A(y): '))
