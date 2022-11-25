@@ -2,19 +2,17 @@
 # *Пример:*
 # пусть N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)
 
-print('Введите целое число N')
+num = int(input('Введите целое число N: '))
 
-N = int(input())
-
-if N <= 0:
+if num <= 0:
     print('Вы ввели некорретное число')
 else:
     lst = []
 
     fact = 1
 
-    for i in range(1, N+1):
+    for i in range(1, num + 1):
         fact = fact * i
         lst.append(fact)
 
-    print(f'Пусть N = {N}, тогда {lst}')
+    print(f'Пусть N = {num}, тогда {lst}')
