@@ -6,12 +6,15 @@ print('Введите целое число N')
 
 N = int(input())
 
-lst = []
+if N <= 0:
+    print('Вы ввели некорретное число')
+else:
+    lst = []
 
-fact = 1
+    fact = 1
 
-for i in range(1, N+1):
-    fact = fact * i
-    lst.append(fact)
+    for i in range(1, N+1):
+        fact = fact * i
+        lst.append(fact)
 
-print(f'Пусть N = {N}, тогда {lst}')
+    print(f'Пусть N = {N}, тогда {lst}')
