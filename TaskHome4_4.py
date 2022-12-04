@@ -14,22 +14,22 @@ if k > 1:
         coeff = randint(0, 100)
         if coeff != 0 and coeff != 1:
             with open(f'{name}.txt', 'a') as data:
-                data.writelines(f' {coeff}*x^{i} +')
+                data.writelines(f'{coeff}*x^{i}+')
         if coeff == 1:
             with open(f'{name}.txt', 'a') as data:
-                data.writelines(f' x^{i} +')
+                data.writelines(f'x^{i}+')
 
 with open(f'{name}.txt', 'a') as data:
     coeff_1 = randint(0, 100)
     if coeff_1 != 0 and coeff_1 != 1:
-        data.writelines(f' {coeff_1}*x +')
+        data.writelines(f'{coeff_1}*x+')
     elif coeff_1 == 1:
             with open(f'{name}.txt', 'a') as data:
-                data.writelines(f' x^{i} +')
+                data.writelines(f'x^{i}+')
     
 
 with open(f'{name}.txt', 'a') as data:
     coeff_2 = randint(0, 100)
     if coeff_2 != 0:
-        data.writelines(f' {coeff_2} = 0')
-    else: data.writelines(f' 0 = 0')
+        data.writelines(f'{coeff_2}=0')
+    else: data.writelines(f'0 = 0')
