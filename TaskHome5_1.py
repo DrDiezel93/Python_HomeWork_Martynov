@@ -7,5 +7,5 @@ lst = list(txt.split())
 
 arr = filter(lambda x: 'абв' not in x.lower(), lst)
 
-with open('file1_del.txt', 'w', encoding = 'utf-8') as data1:
-    data1.write(' '.join(arr))
+with open('file1.txt', 'w', encoding = 'utf-8') as data:
+    data.write(' '.join(arr))
