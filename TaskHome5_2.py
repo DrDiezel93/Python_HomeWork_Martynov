@@ -29,9 +29,9 @@ if randint(1, 2) == 1:
             break
         print(f'Остаток конфет {candies_play}')
         cand_player = randint(1, (max_cond_pl))
-        print(f'Игрок взял {cand_player}')
+        print(f'Игрок взял {cand_player} конфет')
         candies_play = candies_play - cand_player
-        print(f'Остаток конфет {candies_play}')
+        print(f'Остаток конфет {candies_play} конфет')
 else:
     print('Начинает игрок')
     while candies_play > 0:
