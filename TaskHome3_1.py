@@ -2,11 +2,11 @@
 # Пример:
 # - [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
 
-lst = [2, 3, 5, 9, 3, 9, 5]
+lst = [2, 3, 5, 9, 3]
 
-sum = 0
+# sum = 0
 
-for i in range(1, len(lst), 2):
-    sum = sum + lst[i]
+# for i in range(1, len(lst), 2):
+#     sum = sum + lst[i]
 
-print(f'{lst} -> сумма элементов на нечетных позициях: {sum}')
+print(f'{lst} -> сумма элементов на нечетных позициях: {sum([lst[x] for x in range(1, len(lst), 2)])}')
